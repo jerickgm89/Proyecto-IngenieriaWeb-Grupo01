@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavBar from '../layouts/LayoutNavBar.astro';
+import LayoutCard from '../layouts/LayoutCard.astro';
+import NavbarLinks from '../componentsReact/navbarLinks';
+import Carousel from '../layouts/LayoutCarousel.astro';
+import Cards from '../componentsReact/card'
+import SectionInicio from '../components/SectionInicio.astro'
+---
+
+<Layout title="Innova Car Service">
+	<NavBar>
+		<NavbarLinks />
+	</NavBar>
+	<main>
+		<Carousel />
+		<LayoutCard>
+			<Cards />
+		</LayoutCard>
+		<SectionInicio />	
+	</main>
+</Layout>
+
