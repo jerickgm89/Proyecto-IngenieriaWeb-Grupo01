@@ -5,6 +5,7 @@ export default function NavbarLinks() {
         {
             id: 1,
             description: "Inicio",
+            href: '/'
         },
         {
             id: 2,
@@ -28,9 +29,9 @@ export default function NavbarLinks() {
             <ul class={classNameul}>
                 {nameLinks.map((nameLinks) => {
                         return (              
-                            <li key={nameLinks.id} class={classNameLinks}>
-                                <a href="#" >{nameLinks.description}</a>   
-                            </li>
+                            
+                                <a href={nameLinks.href} ><li key={nameLinks.id} class={classNameLinks}>{nameLinks.description}</li></a>   
+                            
 
                         )
                 })}

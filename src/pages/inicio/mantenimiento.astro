@@ -1,0 +1,58 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import LayoutInicio from "../../layouts/LayoutInicio.astro";
+
+import icambioAceite from "../../img/mantenimiento/imagenMantenimiento1.png"
+import iMantoPreventivoMenor from "../../img/mantenimiento/imagenMantenimiento2.png"
+import iMantoPreventivoMayor from "../../img/mantenimiento/imagenMantenimiento3.png"
+---
+
+<Layout title="Mantenimiento"> 
+    <main>
+        <LayoutInicio title="Mantenimiento Preventivos">
+            <h3 class="w-full text-center text-3xl py-5">Taller Automotriz</h3>
+            <div class="px-72">
+
+                <div class="grid grid-cols-2 justify-center py-6">
+                    <div>
+                       <img src={icambioAceite.src} alt="cambio de aceite" class="mx-auto rounded-lg"> 
+                    </div>
+                    
+                    <div class="grid content-around justify-start border-l-2 border-black pl-5">
+                        <h3 class="text-gray-800 font-medium text-2xl">Cambio de aceite</h3>
+                        <p>Cambio de aceite (01 gl. 5w30)     |     Cambio de filtro de aceite (01 und.)</p>
+                        <p class="text-gray-700 font-light text-base">La importancia del cambio de aceite es lubricar todas las piezas del motor, reducir la fricción, controlar la temperatura y asegurar el rendimiento y vida del motor. Te recomendamos hacerla cada 5.000 para aceite minerales o semi-sintético y 8.000 kilómetros para aceite sintético.</p>
+                        <button class="w-full rounded-xl bg-red-700 py-2 text-white font-semibold leading-6 hover:bg-red-600"><a href="">COTIZA TU SERVICIO</a></button>
+                    </div>
+                </div>  
+
+                <div class="grid grid-cols-2 justify-center py-6">
+                    <div>
+                       <img src={iMantoPreventivoMenor.src} alt="cambio de aceite" class="mx-auto rounded-lg"> 
+                    </div>
+                    
+                    <div class="grid content-around justify-start border-l-2 border-black pl-5">
+                        <h3 class="text-gray-800 font-medium text-2xl">Mantenimiento preventivo Menor</h3>
+                        <p>Cambio de aceite (sintético, semi sintético y mineral)   |   Arandela de cárter Cambio de filtro de aceite (01 und.)   |   Analizador de batería Revisión y regulación de frenos   |   Revisión de  Luces   |   Fluidos   |   Presión de llantas   |   Líquido limpiaparabrisas   |   Lavado de motor y carrocería</p>
+                        <p class="text-gray-700 font-light text-base">Consta de una serie de revisiones que se efectúan en un tiempo determinado para disminuir las probabilidades de fallas o desgastes que amerite una reparación costosa del vehículo.Este servicio debe realizarse cada 5000 km o o según normas del fabricante.</p>
+                        <button class="w-full rounded-xl bg-red-700 py-2 text-white font-semibold leading-6 hover:bg-red-600"><a href="">COTIZA TU SERVICIO</a></button>
+                    </div>
+                </div>  
+
+                <div class="grid grid-cols-2 justify-center py-6">
+                    <div>
+                       <img src={iMantoPreventivoMayor.src} alt="cambio de aceite" class="mx-auto rounded-lg"> 
+                    </div>
+                    
+                    <div class="grid content-around justify-start border-l-2 border-black pl-5">
+                        <h3 class="text-gray-800 font-medium text-2xl">Mantenimiento preventivo Mayor</h3>
+                        <p>Cambio de aceite (sintético, semi sintético, mineral)   |   Cambio de 01 Filtro de aceite  01 Filtro de aire   |  Cambio de filtro de polen  A/C |  Arandela de cárter   |   Cambio de bujías (de ser necesario) | Limpieza de obturador |   Ajuste con escáner | Desmontaje de inyectores  | Mantenimiento de inyectores |  Revisión y regulación de frenos Analizador de batería   |   Revisión de Luces   |   Fluidos   |   Presión de llantas   |   Líquido limpiaparabrisas   |   Lavado de motor y carrocería</p>
+                        <p class="text-gray-700 font-light text-base">Consta de una serie de revisiones que se efectúan en un tiempo determinado para disminuir las probabilidades de fallas o desgastes que amerite una reparación costosa del vehículo.Este servicio debe realizarse cada 5000 km o o según normas del fabricante.</p>
+                        <button class="w-full rounded-xl bg-red-700 py-2 text-white font-semibold leading-6 hover:bg-red-600"><a href="">COTIZA TU SERVICIO</a></button>
+                    </div>
+                </div>  
+                
+            </div>
+        </LayoutInicio>
+    </main>    
+</Layout>

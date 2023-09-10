@@ -2,7 +2,10 @@
 interface Props {
 	title: string;
 }
-
+import LayoutNavBar from '../layouts/LayoutNavBar.astro';
+import NavbarLinks from '../componentsReact/navbarLinks';
+import LayoutFooter from './LayoutFooter.astro';
+import { ViewTransitions } from 'astro:transitions';
 const { title } = Astro.props;
 ---
 
@@ -14,10 +17,15 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image" href="/logopage.png" />
 		<meta name="generator" content={Astro.generator} />
+		<ViewTransitions />
 		<title>{title}</title>
 	</head>
-	<body class="">
+	<body class="font-sans">
+		<LayoutNavBar>
+			<NavbarLinks />
+		</LayoutNavBar>
 		<slot />
+		<LayoutFooter />
 	</body>
 </html>
 
