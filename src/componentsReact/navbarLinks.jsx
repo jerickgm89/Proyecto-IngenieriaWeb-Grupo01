@@ -4,7 +4,7 @@ export default function NavbarLinks() {
     const nameLinks = [
         {
             id: 1,
-            description: "Inicio",
+            description: "INICIO",
             href: '/'
         },
         {
