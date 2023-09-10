@@ -12,20 +12,21 @@ export default function Card() {
 			title: 'Mantenimiento',
 			description: 'En InnovaCarService cuidamos de tu vehículo. Si requieres mantenimiento programado, revisar tus frenos u otro servicio puedes reservar tu cita con nosotros.',
 			imagen: imagen1.src,
-			href: '/inicio/mantenimiento'
+			href: '/mantenimiento'
 		},	
 		{
 			id: 2,
 			title: 'Mecanica Especializada',
 			description: 'Contamos con profesionales y equipos especializados para tender cualquier inconveniente de tu vehículo si necesitas una reparación por desperfecto.',
 			imagen: imagen2.src,
-			href: '/inicio/mecanica-especializada'
+			href: '/mecanica-especializada'
 		},
 		{
 			id: 3,
 			title: 'Planchado y Pintura',
 			description: 'Si amas que tu vehículo se vea como nuevo llegaste al lugar indicado. Deja tu auto en manos de los expertos',
-			imagen: imagen3.src
+			imagen: imagen3.src,
+			href: '/planchado-pintura'
 		},
 		{
 			id: 4,
@@ -46,7 +47,7 @@ export default function Card() {
 								<p class="bg-gray-300 text-black text-center py-3">{contentCard.title}</p>
 								<p class="text-black text-center py-2">{contentCard.description}</p>
 							</a>
-							<button class="w-full rounded-xl bg-red-700 py-2 text-white font-semibold leading-6 hover:bg-red-600"><a href={contentCard.href}>Mas informacion</a></button>
+							<a href={contentCard.href}><button class="w-full rounded-xl bg-red-700 py-2 text-white font-semibold leading-6 hover:bg-red-600">Mas informacion</button></a>
 						</div>
 					)				
 				})

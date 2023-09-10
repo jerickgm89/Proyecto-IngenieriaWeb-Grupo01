@@ -1,0 +1,68 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LayoutInicio from "../layouts/LayoutInicio.astro";
+
+import imagen1 from "../img/planchadoPintura/imagen1.png"
+import imagen2 from "../img/planchadoPintura/imagen2.png"
+import imagen3 from "../img/planchadoPintura/imagen3.png"
+import imagen4 from "../img/planchadoPintura/imagen4.png"
+---
+
+<Layout title="Planchado y Pintura"> 
+    <main>
+        <LayoutInicio title="Planchado y Pintura">
+            
+            <div class="px-72">
+
+                <div class="grid grid-cols-2 justify-center py-6">
+                    <div>
+                       <img src={imagen1.src} alt="Planchado - reparación de carrocería" class="mx-auto rounded-lg"> 
+                    </div>                    
+                    <div class="grid content-around justify-start border-l-2 border-black pl-5">
+                        <h3 class="text-gray-800 font-medium text-2xl">Planchado - reparación de carrocería</h3>
+                        <p>Preparación del vehículo para el trabajo de planchado.Reparación de carrocería   |   Reparación de fibra de vidrio   |   Reconstrucción Desabollado   |   Reparación de rayones   |   Enderezado de chasis   |   Modificaciones, entre otros.</p>
+                        <p class="text-gray-700 font-light text-base">El proceso consiste en restaurar las piezas que han sido golpeadas, dañadas u otro problema, mientras cuidamos las partes originales no afectadas por el impacto. Reparamos los accidentes leves o graves, o simplemente quieres mejorar la imagen de tu vehículo.</p>
+                        <a href=""><button class="w-full rounded-xl bg-red-700 py-2 text-white font-semibold leading-6 hover:bg-red-600">COTIZA TU SERVICIO</button></a>
+                    </div>
+                </div>    
+                
+                <div class="grid grid-cols-2 justify-center py-6">
+                    <div>
+                       <img src={imagen2.src} alt="Pintura en general" class="mx-auto rounded-lg"> 
+                    </div>                    
+                    <div class="grid content-around justify-start border-l-2 border-black pl-5">
+                        <h3 class="text-gray-800 font-medium text-2xl">Pintura en general</h3>
+                        <p>Pintado por paños   |   Baño de pintura   |   Corrección de arañones Cambio de color   Pintado de aros, entre otros -  Usamos materiales de alta calidad.</p>
+                        <p class="text-gray-700 font-light text-base">Contamos con personal de amplia experiencia en el proceso de pintura en general. Trabajamos con materiales de alta calidad para lograr cubrir las expectativas de nuestros clientes hasta alcanzar su total satisfacción. Nuestro compromiso es trabajar arduamente hasta que el cliente se sienta plenamente satisfecho. <br>*Nota: Los precios son referenciales de acuerdo al tipo de pintura de cada vehículo.</p>
+                        <a href=""><button class="w-full rounded-xl bg-red-700 py-2 text-white font-semibold leading-6 hover:bg-red-600">COTIZA TU SERVICIO</button></a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 justify-center py-6">
+                    <div>
+                       <img src={imagen3.src} alt="cambio-color" class="mx-auto rounded-lg"> 
+                    </div>                    
+                    <div class="grid content-around justify-start border-l-2 border-black pl-5">
+                        <h3 class="text-gray-800 font-medium text-2xl">Cambio de color   |   Baño de pintura</h3>
+                        <p>Trabajamos con materiales de alta calidad <br>Pintura Monocapa   |   Pintura Tricapa (perlada)</p>
+                        <p class="text-gray-700 font-light text-base">Contamos con personal de amplia experiencia en el proceso de pintura en general. Trabajamos con materiales de alta calidad para lograr cubrir las expectativas de nuestros clientes hasta alcanzar su total satisfacción.  Nuestro compromiso es trabajar arduamente hasta que el cliente se sienta plenamente satisfecho.<br>*Nota: Los precios son referenciales de acuerdo al tipo de pintura de cada vehículo.</p>
+                        <a href=""><button class="w-full rounded-xl bg-red-700 py-2 text-white font-semibold leading-6 hover:bg-red-600">COTIZA TU SERVICIO</button></a>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 justify-center py-6">
+                    <div>
+                       <img src={imagen4.src} alt="Tratamiento de pintura" class="mx-auto rounded-lg"> 
+                    </div>                    
+                    <div class="grid content-around justify-start border-l-2 border-black pl-5">
+                        <h3 class="text-gray-800 font-medium text-2xl">Tratamiento de pintura</h3>
+                        <p>Descontaminado   |   Aplicación de niveles de pulidor para retirar rayones Aplicación de pulidor fino   |   Aplicación de abrillantador   |   Aplicación de protector</p>
+                        <p class="text-gray-700 font-light text-base">Es un proceso de pulido intenso y detallado, sirve para realzar y levantar el brillo dejando la superficie libre de rayas y marcas superficiales, removiendo rayones tipo tela de araña, brindando un acabado fino o mojado.</p>
+                        <a href=""><button class="w-full rounded-xl bg-red-700 py-2 text-white font-semibold leading-6 hover:bg-red-600">COTIZA TU SERVICIO</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </LayoutInicio>
+    </main>    
+</Layout>
