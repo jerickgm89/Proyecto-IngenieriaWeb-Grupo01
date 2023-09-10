@@ -18,7 +18,8 @@ export default function Card() {
 			id: 2,
 			title: 'Mecanica Especializada',
 			description: 'Contamos con profesionales y equipos especializados para tender cualquier inconveniente de tu vehículo si necesitas una reparación por desperfecto.',
-			imagen: imagen2.src
+			imagen: imagen2.src,
+			href: '/inicio/mecanica-especializada'
 		},
 		{
 			id: 3,

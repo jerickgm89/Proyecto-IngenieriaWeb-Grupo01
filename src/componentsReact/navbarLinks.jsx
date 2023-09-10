@@ -28,12 +28,9 @@ export default function NavbarLinks() {
         <>        
             <ul class={classNameul}>
                 {nameLinks.map((nameLinks) => {
-                        return (              
-                            
+                        return (
                                 <a href={nameLinks.href} ><li key={nameLinks.id} class={classNameLinks}>{nameLinks.description}</li></a>   
-                            
-
-                        )
+                            )
                 })}
             </ul>
         </>
