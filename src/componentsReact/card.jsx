@@ -41,13 +41,13 @@ export default function Card() {
 			{
 				contentCard.map((contentCard) => {
 					return (
-						<div class="my-7" key={contentCard.id}>
-							<img src={contentCard.imagen} alt="imagen1" class="mx-auto w-full max-h-72 rounded-t-xl"/>
-							<a href={contentCard.href} class="rounded-2xl">						
-								<p class="bg-gray-300 text-black text-center py-3">{contentCard.title}</p>
-								<p class="text-black text-center py-2">{contentCard.description}</p>
+						<div className="my-7" key={contentCard.id}>
+							<img src={contentCard.imagen} alt="imagen1" className="mx-auto w-full max-h-72 rounded-t-xl"/>
+							<a href={contentCard.href} className="rounded-2xl">						
+								<p className="bg-gray-300 text-black text-center py-3">{contentCard.title}</p>
+								<p className="text-black text-center py-2">{contentCard.description}</p>
 							</a>
-							<a href={contentCard.href}><button class="w-full rounded-xl bg-red-700 py-2 text-white font-semibold leading-6 hover:bg-red-600">Mas informacion</button></a>
+							<a href={contentCard.href}><button className="w-full rounded-xl bg-red-700 py-2 text-white font-semibold leading-6 hover:bg-red-600">Mas informacion</button></a>
 						</div>
 					)				
 				})
