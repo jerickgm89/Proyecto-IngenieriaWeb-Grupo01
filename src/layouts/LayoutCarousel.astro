@@ -1,7 +1,4 @@
 ---
-interface ImageMetaData {
-    src: string;
-}
 import imagen1 from '../img/carousel/imageCarousel2.png'
 import imagen2 from '../img/carousel/imageCarousel1.png'
 import imagen3 from '../img/carousel/imageCarousel3.png'
@@ -11,7 +8,7 @@ import imagen4 from '../img/carousel/imageCarousel4.png'
 <div id="carousel-content">
     <div id="carousel-box">
         <div class="carousel-element">
-            <img class="image" src={imagen1.src} >
+            <img class="image" src={imagen1.src}>
         </div>
 
         <div class="carousel-element">
@@ -38,7 +35,6 @@ import imagen4 from '../img/carousel/imageCarousel4.png'
     -ms-transition: all 0.75s ease;
     -o-transition: all 0.75s ease;
     transition: all 0.75s ease;
-    height: 500px;
     width: 400%;
 }
 #carousel-content {
@@ -47,7 +43,7 @@ import imagen4 from '../img/carousel/imageCarousel4.png'
     text-align: left;
 }
 .image{
-    height: 700px;
+    height: 500px;
     width: 100%;
 }
 .carousel-element {

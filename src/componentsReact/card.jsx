@@ -1,54 +1,34 @@
 
-import imagen4 from '../img/card/aire-acondicionado-05.png'
-import imagen1 from '../img/card/cambio-aceite-01.png'
-import imagen2 from '../img/card/mant-mayor-04.png'
-import imagen3 from '../img/card/panos-pintura-04.png'
+import {contentCard} from '../tools/cardTools.jsx'
 
 
 export default function Card() {
-	const contentCard = [
-		{
-			id: 1,
-			title: 'Mantenimiento',
-			description: 'En InnovaCarService cuidamos de tu vehículo. Si requieres mantenimiento programado, revisar tus frenos u otro servicio puedes reservar tu cita con nosotros.',
-			imagen: imagen1.src,
-			href: '/mantenimiento'
-		},	
-		{
-			id: 2,
-			title: 'Mecanica Especializada',
-			description: 'Contamos con profesionales y equipos especializados para tender cualquier inconveniente de tu vehículo si necesitas una reparación por desperfecto.',
-			imagen: imagen2.src,
-			href: '/mecanica-especializada'
-		},
-		{
-			id: 3,
-			title: 'Planchado y Pintura',
-			description: 'Si amas que tu vehículo se vea como nuevo llegaste al lugar indicado. Deja tu auto en manos de los expertos',
-			imagen: imagen3.src,
-			href: '/planchado-pintura'
-		},
-		{
-			id: 4,
-			title: 'Servicios Complementarios',
-			description: 'Carga de aire acondicionado | Reparacion de aire acondicionado | Undercoating y zincado | Lavado de salon',
-			imagen: imagen4.src
-		}
-	]
 
 	return(
 		<>	
 			{
 				contentCard.map((contentCard) => {
 					return (
-						<div className="my-7" key={contentCard.id}>
-							<img src={contentCard.imagen} alt="imagen1" className="mx-auto w-full max-h-72 rounded-t-xl"/>
-							<a href={contentCard.href} className="rounded-2xl">						
-								<p className="bg-gray-300 text-black text-center py-3">{contentCard.title}</p>
-								<p className="text-black text-center py-2">{contentCard.description}</p>
-							</a>
-							<a href={contentCard.href}><button className="w-full rounded-xl bg-red-700 py-2 text-white font-semibold leading-6 hover:bg-red-600">Mas informacion</button></a>
+						<div className="max-w-2xl mx-auto py-5 ">							
+							<div className="bg-white shadow-md border rounded-lg max-w-sm bg-cover bg-center">
+								<a href={contentCard.href}>
+									<img src={contentCard.imagen} alt="imagen" classNameName="rounded-lg"/>
+									
+								</a>
+								<div className="p-5">
+									<a href={contentCard.href}>
+										<h5 className="text-black-900 font-bold text-2xl tracking-tight mb-2">{contentCard.title}</h5>
+									</a>
+									<p className="font-normal text-gray-700 mb-3">{contentCard.description}</p>
+									<a href={contentCard.href} className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center">
+										Mas informacion
+										<svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+									</a>
+								</div>
+							</div>
 						</div>
+			
+						
 					)				
 				})
 			}	
