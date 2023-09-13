@@ -1,18 +1,50 @@
 ---
 import logo from '../../img/logotipoInnova.png'
+import { Icon } from 'astro-icon'
 ---
-<div class="bg-slate-600 grid grid-cols-12 gap-4">
-    <div class="col-span-2 m-4 mt-9">
-        <img src={logo.src} alt="logo">
-        <nav class="bg-cyan-100 mx-3 mt-10">
-            <ul>
-                <li>Dashboard</li>
-                <li>Cotizaciones</li>
-            </ul>
-        </nav>
+<nav class="bg-slate-900 border-b border-slate-600">
+    <div class="flex justify-between items-center px-14">
+        <!-- Aumenté el padding aquí para añadir espacio en los lados -->
+        <!-- Ícono de Menú -->
+        <button id="menuBtn">           
+            <Icon class="justify-self-center col-start-2 text-white" name="ic:sharp-menu" width="40" height="40" />
+        </button>
+
+        <!-- Logo -->
+        <div class="ml-1">
+            <img src={logo.src} alt="logo">
+        </div>
+
+        <!-- Ícono de Notificación y Perfil -->
+        <div class="space-x-4">
+            <button>
+                <Icon class="justify-self-center col-start-2 text-white" name="ic:twotone-notifications-none" width="30" height="30" />
+            </button>
+
+        </div>
+    </div>
+</nav>
+<div class="max-lg:invisible container grid grid-cols-12 mx-auto max-w-full gap-4">    
+    <div class="col-span-2 bg-slate-900 min-h-screen">
+        <div class="grid grid-cols-6 py-3 text-white hover:bg-slate-800">
+            <Icon class="justify-self-center col-start-2" name="ic:baseline-dashboard" width="30" height="30" />
+            <p class="text-2xl grid col-span-3">Dashboard</p> 
+        </div>
+        <div class="grid grid-cols-6 py-3 text-white hover:bg-slate-800">
+            <Icon class="justify-self-center col-start-2" name="ic:round-mail" width="30" height="30" />
+            <p class="text-2xl grid col-span-3">Cotizaciones</p> 
+        </div>
+        <div class="grid grid-cols-6 py-3 text-white hover:bg-slate-800">
+            <Icon class="justify-self-center col-start-2" name="ic:baseline-account-box" width="30" height="30" />
+            <p class="text-2xl grid col-span-3">Mi Cuenta</p> 
+        </div>
+        <div class="grid grid-cols-6 py-3 text-white hover:bg-slate-800">
+            <Icon class="justify-self-center col-start-2" name="ic:baseline-exit-to-app" width="30" height="30" />
+            <p class="text-2xl grid col-span-3">Cerrar Sesion</p> 
+        </div>
     </div>
     <div class="col-span-10">
-        <div class="contenedor bg-amber-950 my-10 mx-5 p-2">
+        <div class="bg-amber-950 my-10 mx-5 p-2 rounded-md min-h">
             <div class="bg-slate-800 mx-auto w-full text-center p-5">Lorem</div>
         </div>
     </div>
