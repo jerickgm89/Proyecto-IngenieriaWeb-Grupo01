@@ -1,7 +1,6 @@
 ---
 import logo from '../../img/logotipoInnova.png'
 import { Icon } from 'astro-icon'
-import ContentAdmin from '../../components/contentAdmin.astro';
 ---
 <nav class="bg-slate-900 border-b border-slate-600 py-3">
     <div class="flex justify-between items-center px-14">
@@ -27,22 +26,24 @@ import ContentAdmin from '../../components/contentAdmin.astro';
 </nav>
 <div class=" container grid grid-cols-12 mx-auto max-w-full gap-4">    
     <div class="col-span-2 bg-slate-900 min-h-screen">
-        <div >
-            <a href="../../components/contentAdmin" class="grid grid-cols-6 py-5 text-white hover:bg-slate-800"><Icon class="justify-self-center col-start-2" name="ic:baseline-dashboard" width="30" height="30" />
-            <p class="text-2xl grid col-span-3">Dashboard</p></a> 
+        <div>
+            <a href="/admin/cotizaciones" class="grid grid-cols-6 py-5 text-white hover:bg-slate-800">
+                <Icon class="justify-self-center col-start-2" name="ic:round-mail" width="30" height="30" />
+                <p class="text-2xl grid col-span-3">Cotizaciones</p>
+            </a>
         </div>
-        <div class="grid grid-cols-6 py-5 text-white hover:bg-slate-800">
-            <Icon class="justify-self-center col-start-2" name="ic:round-mail" width="30" height="30" />
-            <p class="text-2xl grid col-span-3">Cotizaciones</p> 
+        <div>
+            <a href="#" class="grid grid-cols-6 py-5 text-white hover:bg-slate-800">
+                <Icon class="justify-self-center col-start-2" name="ic:baseline-account-box" width="30" height="30" />
+                <p class="text-2xl grid col-span-3">Mi Cuenta</p>
+            </a>
         </div>
-        <div class="grid grid-cols-6 py-5 text-white hover:bg-slate-800">
-            <Icon class="justify-self-center col-start-2" name="ic:baseline-account-box" width="30" height="30" />
-            <p class="text-2xl grid col-span-3">Mi Cuenta</p> 
-        </div>
-        <div class="grid grid-cols-6 py-5 text-white hover:bg-slate-800">
-            <Icon class="justify-self-center col-start-2" name="ic:baseline-exit-to-app" width="30" height="30" />
-            <p class="text-2xl grid col-span-3">Cerrar Sesion</p> 
+        <div>
+            <a href="/" class="grid grid-cols-6 py-5 text-white hover:bg-slate-800">
+                <Icon class="justify-self-center col-start-2" name="ic:baseline-exit-to-app" width="30" height="30" />
+                <p class="text-2xl grid col-span-3">Cerrar Sesion</p>
+            </a>
         </div>
     </div>
-    <ContentAdmin/>
+    <slot/>
 </div>

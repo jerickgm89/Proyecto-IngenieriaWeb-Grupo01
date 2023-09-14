@@ -2,16 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 import LayoutInicio from "../layouts/LayoutInicio.astro";
 
-import ContentService from '../componentsReact/contentService.jsx'
+import { MantenimientoCard } from "../componentsReact/contentService.jsx"
 ---
 
 <Layout title="Mantenimiento"> 
-    <main>
         <LayoutInicio title="Mantenimiento Preventivos">
             <h3 class="w-full text-center text-3xl py-5">Taller Automotriz</h3>
-            <div class="px-72 max-sm:px-10">
-                <ContentService />
+            <div class="sm:mx-10 md:mx-52 max-sm:px-10 grid grid-cols-1">
+                <MantenimientoCard />
             </div>
         </LayoutInicio>
-    </main>    
 </Layout>
