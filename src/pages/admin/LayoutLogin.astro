@@ -1,0 +1,26 @@
+---
+interface Props {
+	title: string;
+}
+
+import { ViewTransitions } from 'astro:transitions';
+
+import ModuleLogin from '../../componentsReact/login.jsx'
+---
+
+<!doctype html>
+<html lang="en" class="h-full bg-white">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image" href="/logopage.png" />
+		<meta name="generator" content={Astro.generator} />
+		<ViewTransitions />
+		<title>Iniciar Sesion</title>
+	</head>
+	<body class="font-sans h-full">
+        <ModuleLogin client:visible/>
+	</body>
+</html>
+

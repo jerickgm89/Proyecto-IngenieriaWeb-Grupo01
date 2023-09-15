@@ -67,36 +67,36 @@ const mantenimiento = [
     {
         id: 2,
         title: 'Mantenimiento preventivo Menor',
-        description: 'Cambio de aceite (sintético, semi sintético y mineral)   |   Arandela de cárter Cambio de filtro de aceite (01 und.)   |   Analizador de batería Revisión y regulación de frenos   |   Revisión de  Luces   |   Fluidos   |   Presión de llantas   |   Líquido limpiaparabrisas   |   Lavado de motor y carrocería',
-        description2: 'Consta de una serie de revisiones que se efectúan en un tiempo determinado para disminuir las probabilidades de fallas o desgastes que amerite una reparación costosa del vehículo.Este servicio debe realizarse cada 5000 km o o según normas del fabricante.',
+        description: 'Consta de una serie de revisiones que se efectúan en un tiempo determinado para disminuir las probabilidades de fallas o desgastes que amerite una reparación costosa del vehículo.Este servicio debe realizarse cada 2000 km o según normas del fabricante.',
+        description2: 'Cambio de aceite (sintético, semi sintético y mineral)   |   Arandela de cárter Cambio de filtro de aceite (01 und.)   |   Analizador de batería Revisión y regulación de frenos   |   Revisión de  Luces   |   Fluidos   |   Presión de llantas   |   Líquido limpiaparabrisas   |   Lavado de motor y carrocería',
         imagen: iMantoPreventivoMenor.src
     },
     {
         id: 3,
         title: 'Mantenimiento preventivo Mayor',
-        description: 'Cambio de aceite (sintético, semi sintético, mineral)   |   Cambio de 01 Filtro de aceite  01 Filtro de aire   |  Cambio de filtro de polen  A/C |  Arandela de cárter   |   Cambio de bujías (de ser necesario) | Limpieza de obturador |   Ajuste con escáner | Desmontaje de inyectores  | Mantenimiento de inyectores |  Revisión y regulación de frenos Analizador de batería   |   Revisión de Luces   |   Fluidos   |   Presión de llantas   |   Líquido limpiaparabrisas   |   Lavado de motor y carrocería',
-        description2: 'Consta de una serie de revisiones que se efectúan en un tiempo determinado para disminuir las probabilidades de fallas o desgastes que amerite una reparación costosa del vehículo.Este servicio debe realizarse cada 5000 km o o según normas del fabricante.',
+        description: 'Consta de una serie de revisiones que se efectúan en un tiempo determinado para disminuir las probabilidades de fallas o desgastes que amerite una reparación costosa del vehículo.Este servicio debe realizarse cada 5000 km o según normas del fabricante.',
+        description2: 'Cambio de aceite (sintético, semi sintético, mineral)   |   Cambio de 01 Filtro de aceite  01 Filtro de aire   |  Cambio de filtro de polen  A/C |  Arandela de cárter   |   Cambio de bujías (de ser necesario) | Limpieza de obturador |   Ajuste con escáner | Desmontaje de inyectores  | Mantenimiento de inyectores |  Revisión y regulación de frenos Analizador de batería   |   Revisión de Luces   |   Fluidos   |   Presión de llantas   |   Líquido limpiaparabrisas   |   Lavado de motor y carrocería',
         imagen: iMantoPreventivoMayor.src
     },
     {
         id: 4,
         title: 'Diagnóstico y mantenimiento de sistema de frenos',
-        description: 'Diagnóstico del estado del disco   |   Reparación del sistema de frenos Rectificación de discos   |   Rectificado de zapatas   |   Regulación de freno de mano.',
-        description2: 'Los discos de frenos tienen un grosor mínimo para su buen funcionamiento, por la fricción con las pastillas de frenos desgastadas, estos puede sufrir de rayones. Para saber el estado del disco hay que estar atento al chirrido que emite al frenar',
+        description: 'Los discos de frenos tienen un grosor mínimo para su buen funcionamiento, por la fricción con las pastillas de frenos desgastadas, estos puede sufrir de rayones. Para saber el estado del disco hay que estar atento al chirrido que emite al frenar',
+        description2: 'Diagnóstico del estado del disco   |   Reparación del sistema de frenos Rectificación de discos   |   Rectificado de zapatas   |   Regulación de freno de mano.',
         imagen: iDiagMantoFrenos.src
     },
     {
         id: 5,
         title: 'Cambio de pastillas de frenos',
-        description: 'Diagnóstico del sistema de freno   |   Reparación del sistema de freno. Mantenimiento del sistema de frenos   |   Limpieza del sistema de frenos. Regulación del freno de mano.',
-        description2: 'La función de las pastillas es generar la fricción necesario para que ralentice el movimiento del disco. El cambio de las patillas se debe hacerse entre los 20,000 y 30,000 kms. Las pastillas se gastan más con el uso prolongado  en la ciudad. Además es normal que las pastillas delanteras sean las primeras en desgastarse.',
+        description: 'La función de las pastillas es generar la fricción necesario para que ralentice el movimiento del disco. El cambio de las patillas se debe hacerse entre los 20,000 y 30,000 kms. Las pastillas se gastan más con el uso prolongado  en la ciudad. Además es normal que las pastillas delanteras sean las primeras en desgastarse.',
+        description2: 'Diagnóstico del sistema de freno   |   Reparación del sistema de freno. Mantenimiento del sistema de frenos   |   Limpieza del sistema de frenos. Regulación del freno de mano.',
         imagen: iCambioPastillas.src
     },
     {
         id: 6,
         title: 'Alineación y balanceo',
-        description: 'Ajustes de los ángulos de la llantas   |   Revisar la presión de la llantas',
-        description2: 'Alarga la vida útil de la SUSPENSIÓN y las LLANTAS de tu vehículo. Se recomienda hacerlo cada 10,000 kms para así garantizar tu seguridad y la de tus acompañantes',
+        description: 'Alarga la vida útil de la SUSPENSIÓN y las LLANTAS de tu vehículo. Se recomienda hacerlo cada 10,000 kms para así garantizar tu seguridad y la de tus acompañantes',
+        description2: 'Ajustes de los ángulos de la llantas   |   Revisar la presión de la llantas',
         imagen: iAlineacionBalanceo.src
     }
 ]
@@ -119,7 +119,7 @@ const mecanicaEspecializada = [
     {
         id: 3,
         title: 'Afinamiento electronico',
-        description: 'Revisión del sistema eléctrico, Alineamiento de luces, Revisión y/o cambio de batería, Verificación de cargas de baterías, entre otros. <br> Programación del panel electrónico, Verificación de cierre centralizado, Mandos electrónicos, entre otros.',
+        description: 'Revisión del sistema eléctrico, Alineamiento de luces, Revisión y/o cambio de batería, Verificación de cargas de baterías, entre otros.  Programación del panel electrónico, Verificación de cierre centralizado, Mandos electrónicos, entre otros.',
         description2: 'La Tecnología Automotriz nos muestra avances como los vehículos totalmente eléctricos y vehículos de combustión controlados electrónicamente.Todos los componentes eléctricos de un vehículo están sometidos a condiciones extremas como: agua, polvo, temperaturas, líquidos, corrosión, etc… Por eso es necesario revisarlos y validar su correcto funcionamiento.',
         imagen: imecEspec3.src
     },
@@ -186,14 +186,14 @@ const planchadoPintura = [
         id: 2,
         title: 'Pintura en general',
         description: 'Pintado por paños   |   Baño de pintura   |   Corrección de arañones Cambio de color   Pintado de aros, entre otros -  Usamos materiales de alta calidad.',
-        description2: 'Contamos con personal de amplia experiencia en el proceso de pintura en general. Trabajamos con materiales de alta calidad para lograr cubrir las expectativas de nuestros clientes hasta alcanzar su total satisfacción. Nuestro compromiso es trabajar arduamente hasta que el cliente se sienta plenamente satisfecho. <br>*Nota: Los precios son referenciales de acuerdo al tipo de pintura de cada vehículo.',
+        description2: 'Contamos con personal de amplia experiencia en el proceso de pintura en general. Trabajamos con materiales de alta calidad para lograr cubrir las expectativas de nuestros clientes hasta alcanzar su total satisfacción. Nuestro compromiso es trabajar arduamente hasta que el cliente se sienta plenamente satisfecho. *Nota: Los precios son referenciales de acuerdo al tipo de pintura de cada vehículo.',
         imagen: iplanPintura2.src
     },
     {
         id: 3,
         title: 'Cambio de color   |   Baño de pintura',
-        description: 'Trabajamos con materiales de alta calidad <br>Pintura Monocapa   |   Pintura Tricapa (perlada).',
-        description2: 'Contamos con personal de amplia experiencia en el proceso de pintura en general. Trabajamos con materiales de alta calidad para lograr cubrir las expectativas de nuestros clientes hasta alcanzar su total satisfacción.  Nuestro compromiso es trabajar arduamente hasta que el cliente se sienta plenamente satisfecho.<br>*Nota: Los precios son referenciales de acuerdo al tipo de pintura de cada vehículo.',
+        description: 'Trabajamos con materiales de alta calidad Pintura Monocapa   |   Pintura Tricapa (perlada).',
+        description2: 'Contamos con personal de amplia experiencia en el proceso de pintura en general. Trabajamos con materiales de alta calidad para lograr cubrir las expectativas de nuestros clientes hasta alcanzar su total satisfacción.  Nuestro compromiso es trabajar arduamente hasta que el cliente se sienta plenamente satisfecho.*Nota: Los precios son referenciales de acuerdo al tipo de pintura de cada vehículo.',
         imagen: iplanPintura3.src
     },
     {

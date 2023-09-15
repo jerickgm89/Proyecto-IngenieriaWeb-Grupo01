@@ -31,17 +31,17 @@ export default function CarouselCustomNavigation() {
       <img
         src={iCarousel01.src}
         alt="image 1"
-        className=" w-full object-cover"
+        className=" h-fit w-full object-cover"
       />
       <img
         src={iCarousel02.src}
         alt="image 2"
-        className=" w-full object-cover"
+        className=" h-fit w-full object-cover"
       />
       <img
         src={iCarousel04.src}
         alt="image 3"
-        className=" w-full object-cover"
+        className=" h-fit w-full object-cover"
       />
     </Carousel>
   );
