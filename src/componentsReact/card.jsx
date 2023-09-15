@@ -1,6 +1,5 @@
 
 import {contentCard} from '../tools/cardTools.jsx';
-import { Icon } from 'astro-icon'
 
 
 export default function Card() {
@@ -20,10 +19,11 @@ export default function Card() {
 										<h5 className="text-black-900 font-bold text-2xl tracking-tight mb-2">{contentCard.title}</h5>
 									</a>
 									<p className="font-normal text-gray-700 mb-3">{contentCard.description}</p>
-									<a href={contentCard.href} className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center w-full justify-center">Mas informacion</a>
+									<a href={contentCard.href} className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-3 py-2 text-center inline-flex items-center w-full justify-center font-semibold">Mas informacion</a>
 								</div>
 							</div>
 						</div>
+						
 			
 						
 					)				

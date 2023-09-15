@@ -1,17 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import LayoutCard from '../layouts/LayoutCard.astro';
-import LayoutCarousel from '../layouts/LayoutCarousel.astro';
 
 import SectionInicio from '../components/SectionInicio.astro'
 
 import Cards from '../componentsReact/card'
+import LCarouselImage from '../componentsReact/carousel.jsx'
 
 ---
 
 <Layout title="Innova Car Service">
 	<main>
-		<LayoutCarousel />
+		<LCarouselImage client:visible/>
 		<LayoutCard>
 			<Cards />
 		</LayoutCard>

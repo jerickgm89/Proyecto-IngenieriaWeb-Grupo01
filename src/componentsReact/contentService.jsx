@@ -7,8 +7,8 @@ export const MantenimientoCard = () => {
             {
                 mantenimiento.map((mantenimiento) => {
                     return (
-                        <div key={mantenimiento.id}  className="grid grid-cols-2 justify-center py-6 max-lg:grid-cols-1">
-                            <div class="px-5">
+                        <div key={mantenimiento.id}  className="grid grid-cols-2 justify-center py-6 lg-max:grid-cols-1">
+                            <div className="px-5">
                                 <img src={mantenimiento.imagen} alt={mantenimiento.title} className="mx-auto rounded-lg"/> 
                             </div>
                             
@@ -32,8 +32,8 @@ export const MecanicEspecializada = () => {
             {
                 mecanicaEspecializada.map((mecanicaEspecializada) => {
                     return (
-                        <div key={mecanicaEspecializada.id}  className="grid grid-cols-2 justify-center py-6 max-lg:grid-cols-1">
-                            <div class="px-5">
+                        <div key={mecanicaEspecializada.id}  className="grid grid-cols-2 justify-center py-6 lg-max:grid-cols-1">
+                            <div className="px-5">
                                 <img src={mecanicaEspecializada.imagen} alt={mecanicaEspecializada.title} className="mx-auto rounded-lg"/> 
                             </div>
                             
@@ -57,8 +57,8 @@ export const PlanchadoyPintura = () => {
             {
                 planchadoPintura.map((planchadoPintura) => {
                     return (
-                        <div key={planchadoPintura.id}  className="grid grid-cols-2 justify-center py-6 max-lg:grid-cols-1">
-                            <div class="px-5">
+                        <div key={planchadoPintura.id}  className="grid grid-cols-2 justify-center py-6 lg-max:grid-cols-1">
+                            <div className="px-5">
                                 <img src={planchadoPintura.imagen} alt={planchadoPintura.title} className="mx-auto rounded-lg"/> 
                             </div>
                             
