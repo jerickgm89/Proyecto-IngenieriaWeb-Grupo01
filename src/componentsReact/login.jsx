@@ -1,6 +1,6 @@
 import logo from '../img/logo.png'
 
-import { Input, Typography } from "@material-tailwind/react";
+import { Input } from "@material-tailwind/react";
 import { useEffect, useState } from 'react';
 
 export default function login() {
@@ -33,10 +33,10 @@ export default function login() {
                 console.log(result)
                 if (result.success === false) {
                     console.log(result.success)
-                    console.log('Login failed, invalid credentials');
+                    alert('Inicio de sesion fallido, credenciales invalidas');
                 }else{
                     sessionStorage.setItem('username',username);
-                    console.log('Login successful')
+                    alert('Inicio de sesion exitoso');
                     window.location.href = '/admin/dashboard';
                 }
             }).catch((err) => {
@@ -60,6 +60,7 @@ export default function login() {
         
     }
 
+
     
     return (
         <>
@@ -78,12 +79,7 @@ export default function login() {
             
                     <div>
                     <Input type="password" label="Password" value={password} onChange={e => passwordupdate(e.target.value)}/>
-                    <Typography
-                        variant="small"
-                        color="red"
-                        className="mt-2 flex items-center gap-1 font-normal"
-                    >                    
-                    </Typography>
+
                     </div>
             
                     <div>
