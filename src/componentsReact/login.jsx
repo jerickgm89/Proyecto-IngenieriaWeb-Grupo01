@@ -22,21 +22,19 @@ export default function login() {
                 "password": password
             };
             
-            fetch("http://18.233.143.65:3000/user/login/",{
+            fetch("http://18.233.143.65:3000/user/login",{
                 method:'POST',
                 headers:{'content-type':'application/json'},
                 body:JSON.stringify(inputobj)
-            }).then((resp) => {
-                return resp.json();
+            }).then((res) => {
+                return res.json();
             }).then((resp) => {
                 console.log(resp)
-                if (Object.keys(resp).length === 0) {
-                    alert('Please Enter valid username');
-                }else{
-                    sessionStorage.setItem('username',username);
-                    sessionStorage.setItem('jwttoken',resp.jwtToken);
-                    window.location.href = '/admin/dashboard';
-                }
+
+                sessionStorage.setItem('username',username);
+                sessionStorage.setItem('jwttoken',resp.jwtToken);
+                window.location.href = '/admin/dashboard';
+                
 
             }).catch((err) => {
                 alert(err);
@@ -48,11 +46,11 @@ export default function login() {
         let result = true;
         if (username === '' || username === null) {
             result = false;
-            alert('Please Enter Username');
+            alert('Por favor ingrese un usuario');
         }
         if (password === '' || password === null) {
             result = false;
-            alert('Please Enter Password');
+            alert('Por favor ingrese una contraseña');
         }
         return result;
     }
