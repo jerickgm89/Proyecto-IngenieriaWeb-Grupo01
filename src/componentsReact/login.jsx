@@ -18,24 +18,27 @@ export default function login() {
         if (validate()) {
 
             let inputobj={
-                "username": username,
+                "user_name": username,
                 "password": password
             };
             
-            fetch("http://18.233.143.65:3000/user/login",{
+            fetch('http://18.233.143.65:3000/user/login/',{
                 method:'POST',
-                headers:{'content-type':'application/json'},
+                headers:{
+                    'Content-Type':'application/json'},
                 body:JSON.stringify(inputobj)
-            }).then((res) => {
-                return res.json();
-            }).then((resp) => {
-                console.log(resp)
-
-                sessionStorage.setItem('username',username);
-                sessionStorage.setItem('jwttoken',resp.jwtToken);
-                window.location.href = '/admin/dashboard';
-                
-
+            }).then((response) => {
+                return response.json();
+            }).then((result) => {
+                console.log(result)
+                if (result.success === false) {
+                    console.log(result.success)
+                    console.log('Login failed, invalid credentials');
+                }else{
+                    sessionStorage.setItem('username',username);
+                    console.log('Login successful')
+                    window.location.href = '/admin/dashboard';
+                }
             }).catch((err) => {
                 alert(err);
             });
@@ -52,7 +55,9 @@ export default function login() {
             result = false;
             alert('Por favor ingrese una contraseña');
         }
+        console.log(username, password)
         return result;
+        
     }
 
     
