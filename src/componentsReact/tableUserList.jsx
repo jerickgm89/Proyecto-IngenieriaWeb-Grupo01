@@ -1,16 +1,5 @@
 import { useState, useEffect } from "react"
 
-// export const [users, setUsers] = useState([]);
-
-// useEffect(() => {
-//     const getUsers = async () => {
-//         const URL = "http://18.233.143.65:3000";
-//             fetch(`${URL}`)
-//             .then(response => response.json())
-//             .then(response => console.log(response))
-//     }
-//     getUsers();
-// }, [])
 
 export default function TableUserList() {
     return(

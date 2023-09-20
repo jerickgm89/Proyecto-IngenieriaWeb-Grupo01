@@ -1,8 +1,10 @@
+//Imangenes de card inicio
 import imagen4 from '../img/card/aire-acondicionado-05.png'
 import imagen1 from '../img/card/cambio-aceite-01.png'
 import imagen2 from '../img/card/mant-mayor-04.png'
 import imagen3 from '../img/card/panos-pintura-04.png'
 
+//Imagenes de Mantenimiento
 import icambioAceite from "../img/mantenimiento/imagenMantenimiento1.png"
 import iMantoPreventivoMenor from "../img/mantenimiento/imagenMantenimiento2.png"
 import iMantoPreventivoMayor from "../img/mantenimiento/imagenMantenimiento3.png"
@@ -10,6 +12,7 @@ import iDiagMantoFrenos from "../img/mantenimiento/imagenMantenimiento4.png"
 import iCambioPastillas from "../img/mantenimiento/imagenMantenimiento5.png"
 import iAlineacionBalanceo from "../img/mantenimiento/imagenMantenimiento6.png";
 
+//Imagenes de mecanica especializada
 import imecEspec1 from "../img/mecanicaEspecializada/imagen1.png"
 import imecEspec2 from "../img/mecanicaEspecializada/imagen2.png"
 import imecEspec3 from "../img/mecanicaEspecializada/imagen3.png"
@@ -21,10 +24,18 @@ import imecEspec8 from "../img/mecanicaEspecializada/imagen8.png"
 import imecEspec9 from "../img/mecanicaEspecializada/imagen9.png"
 import imecEspec10 from "../img/mecanicaEspecializada/imagen10.png"
 
+//Imagenes de planchado y pintura
 import iplanPintura1 from "../img/planchadoPintura/imagen1.png"
 import iplanPintura2 from "../img/planchadoPintura/imagen2.png"
 import iplanPintura3 from "../img/planchadoPintura/imagen3.png"
 import iplanPintura4 from "../img/planchadoPintura/imagen4.png"
+
+//Imagenes de promociones
+import ipromo1 from "../img/promociones/aire-acondicionado.png"
+import ipromo2 from "../img/promociones/cambios-de-aceite.png"
+import ipromo3 from "../img/promociones/escaneo.png"
+import ipromo4 from "../img/promociones/ladies-day.png"
+import ipromo5 from "../img/promociones/refigerante.png"
 
 const contentCard = [
     {
@@ -205,4 +216,47 @@ const planchadoPintura = [
     }
 ]
 
-export {contentCard, mantenimiento, mecanicaEspecializada, planchadoPintura};
+const promociones = [
+    {
+        id: 1,
+        title: 'CAMBIO DE ACEITE',
+        description: '04 litros de aceite 5W30, marca castrol     |     01 Filtro de aceite. Revisión de niveles (hidrolina, refrigerante, líquido de frenos, líquido limpia parabrisas). Revisión de luces / delanteras, posteriores e interior     |    escaner computarizado|     Pulverizado de motor.',
+        description2: 'Tiempo de servicio: 45 minutos aprox. ATENDEMOS TODAS LAS MARCAS',
+        imagen: ipromo1.src,
+        precio: 'Desde S/. 220.00'
+    },
+    {
+        id: 2,
+        title: 'CAMBIO DE ACEITE + ESCANEO ELECTRÓNICO',
+        description: '- 01 gl. de aceite 5W30 full sintético, marca VISTONY   |   01 Filtro de aceite   |   01 Filtro de aire   |   Escaneo electrónico   |   Revisión de niveles (hidrolina, refrigerante, líquido de frenos, líquido limpia parabrisas)   |   Revisión de luces / delanteras, posteriores e interior   |   Analizador de batería con reporte impreso   |   Pulverizado de motor. También brindamos servicios de mecánica en general ',
+        description2: 'Tiempo de servicio: 45 minutos aprox. ATENDEMOS TODAS LAS MARCAS',
+        imagen: ipromo2.src,
+        precio: 'Desde S/. 240.00'
+    },
+    {
+        id: 3,
+        title: 'CAMBIO DE ACEITE + ANTICONGELANTE ',
+        description: '01 gl. de aceite 5W30 full sintético, marca VISTONY   |   01 Filtro de aceite   |   Cambio de anticongelante   |   Revvisión de niveles (hidrolina, refrigerante, líquido de frenos, líquido limpia parabrisas)   |   Revisión de luces / delanteras, posteriores e interior   |   Analizador de batería con reporte impreso   |   Pulverizado de motor.',
+        description2: 'Tiempo de servicio: 45 minutos aprox. ATENDEMOS TODAS LAS MARCAS',
+        imagen: ipromo3.src,
+        precio: 'Desde S/. 280.00'
+    },
+    {
+        id: 4,
+        title: 'JUEVES PARA ELLAS - LADIES DAY',
+        description: '¡No te olvides que todos los JUEVES son #ladiesday Visítanos y obten el 10% de descuentos en todos nuestros servicios, hay muchas sorpresas más! Comunicate con nuestros asesores',
+        description2: '',
+        imagen: ipromo4.src,
+        precio: ''
+    },
+    {
+        id: 5,
+        title: 'AIRE ACONDICIONADO',
+        description: 'Carga de Gas    |    Carga de aceite     |    Detección de fugas    |   Mantenimiento del sistema de A/C    |    Ozonizado de cabina',
+        description2: 'Tiempo de servicio: 45 minutos aprox. ATENDEMOS TODAS LAS MARCAS',
+        imagen: ipromo5.src,
+        precio: 'A Solo S/. 250.00'
+    }
+]
+
+export {contentCard, mantenimiento, mecanicaEspecializada, planchadoPintura, promociones};

@@ -1,6 +1,4 @@
-
 import {contentCard} from '../tools/cardTools.jsx';
-
 
 export default function Card() {
 
@@ -22,10 +20,7 @@ export default function Card() {
 									<a href={contentCard.href} className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-3 py-2 text-center inline-flex items-center w-full justify-center font-semibold">Mas informacion</a>
 								</div>
 							</div>
-						</div>
-						
-			
-						
+						</div>						
 					)				
 				})
 			}	
