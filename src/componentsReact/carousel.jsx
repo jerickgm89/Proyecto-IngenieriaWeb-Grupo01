@@ -12,7 +12,7 @@ export default function CarouselCustomNavigation() {
   return (
     <Carousel
       autoplay={true}
-      autoplayDelay={3000}
+      autoplayDelay={4000}
       loop={true}
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
