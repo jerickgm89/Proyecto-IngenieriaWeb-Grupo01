@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LayoutInicio from "../layouts/LayoutInicio.astro";
+import { PromocionyDescuento } from '../componentsReact/contentService'
+---
+
+<Layout title="Promociones"> 
+        <LayoutInicio title="Promociones">
+            <div class="sm:mx-10 md:mx-52 max-sm:px-10 grid grid-cols-1">
+                <PromocionyDescuento />
+            </div>
+        </LayoutInicio>
+</Layout>

@@ -8,6 +8,7 @@ export default function login() {
     const [username, usernameupdate] = useState('');
     const [password, passwordupdate] = useState('');
     
+    const URL = 'http://18.233.143.65:3000/'
 
     useEffect(() => {
         sessionStorage.clear();
@@ -22,7 +23,7 @@ export default function login() {
                 "password": password
             };
             
-            fetch('http://18.233.143.65:3000/user/login/',{
+            fetch(URL + 'user/login/',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'},

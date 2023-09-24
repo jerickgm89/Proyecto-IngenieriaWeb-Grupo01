@@ -63,7 +63,8 @@ const contentCard = [
         id: 4,
         title: 'Servicios Complementarios',
         description: 'Carga de aire acondicionado | Reparacion de aire acondicionado | Undercoating y zincado | Lavado de salon',
-        imagen: imagen4.src
+        imagen: imagen4.src,
+        href: '/promociones'
     }
 ]
 
