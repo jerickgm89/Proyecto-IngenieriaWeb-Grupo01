@@ -1,26 +1,43 @@
+import {
+	Card,
+	CardHeader,
+	CardBody,
+	CardFooter,
+	Typography,
+	Button,
+  } from "@material-tailwind/react";
+
 import {contentCard} from '../tools/cardTools.jsx';
 
-export default function Card() {
+export default function CardDefault() {
 
 	return(
 		<>	
 			{
 				contentCard.map((contentCard) => {
 					return (
-						<div className="max-w-2xl mx-auto py-5 ">							
-							<div className="bg-white shadow-md border rounded-lg max-w-sm bg-cover bg-center">
+						<Card className="mt-6 w-96" key={contentCard.id}>
+							<CardHeader color="blue-gray" className="relative h-56">
+								<img
+								src={contentCard.imagen}
+								alt={contentCard.title}
+								/>
+							</CardHeader>
+							<CardBody>
+								<Typography variant="h5" color="blue-gray" className="mb-2">
+								{contentCard.title}
+								</Typography>
+								<Typography>
+								{contentCard.description}
+								</Typography>
+							</CardBody>
+							<CardFooter className="pt-0">
 								<a href={contentCard.href}>
-									<img src={contentCard.imagen} alt="imagen" classNameName="rounded-lg"/>
+									<Button color="red" className="w-full">Mas informacion</Button>
 								</a>
-								<div className="p-5">
-									<a href={contentCard.href}>
-										<h5 className="text-black-900 font-bold text-2xl tracking-tight mb-2">{contentCard.title}</h5>
-									</a>
-									<p className="font-normal text-gray-700 mb-3">{contentCard.description}</p>
-									<a href={contentCard.href} className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 rounded-lg text-sm px-3 py-2 text-center inline-flex items-center w-full justify-center font-semibold">Mas informacion</a>
-								</div>
-							</div>
-						</div>						
+								
+							</CardFooter>
+						</Card>						
 					)				
 				})
 			}	
