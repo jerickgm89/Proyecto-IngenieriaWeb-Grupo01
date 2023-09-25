@@ -1,6 +1,3 @@
-
-
-
 import iCarousel01 from '../img/carousel/imageCarousel2.png'
 import iCarousel02 from '../img/carousel/imageCarousel1.png'
 import iCarousel03 from '../img/carousel/imageCarousel3.png'

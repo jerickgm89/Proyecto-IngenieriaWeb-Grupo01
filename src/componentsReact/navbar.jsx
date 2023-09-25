@@ -18,19 +18,9 @@ import {
 } from "@material-tailwind/react";
 import {
   ChevronDownIcon,
-  UserCircleIcon,
-  CubeTransparentIcon,
   Bars3Icon,
   XMarkIcon,
-  FlagIcon,
-  ChatBubbleOvalLeftIcon,
-  UsersIcon,
-  FolderIcon,
   Square3Stack3DIcon,
-  RocketLaunchIcon,
-  FaceSmileIcon,
-  PuzzlePieceIcon,
-  GiftIcon,
   WrenchIcon,
   HomeModernIcon,
   SparklesIcon,
@@ -49,9 +39,6 @@ const colors = {
   "blue-gray": "bg-blue-gray-50 text-blue-gray-500",
   purple: "bg-purple-50 text-purple-500",
   teal: "bg-teal-50 text-teal-500",
-  cyan: "bg-cyan-50 text-cyan-500",
-  pink: "bg-pink-50 text-pink-500",
-
   red: "bg-red-500 text-red-500",
 };
  
@@ -80,7 +67,7 @@ const navListMenuItems = [
   {
     color: "teal",
     icon: SwatchIcon,
-    title: "Servicios complementarios",
+    title: "Servicios adicionales",
     description: "Contamos con servicios de lavado, engrase y mas.",
     href: "/mantenimiento",
   },
@@ -166,34 +153,32 @@ function NavList() {
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Typography
         as="a"
-        href="#"
+        href="/"
         variant="small"
         color="blue-gray"
         className="font-normal"
       >
-        <a href='/'>
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
-            <HomeModernIcon className="h-[18px] w-[18px]" />
-            Inicio
-          </ListItem>
-        </a>
-
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          <HomeModernIcon className="h-[18px] w-[18px]" />
+          Inicio
+        </ListItem>
       </Typography>
+
       <NavListMenu />
+
       <Typography
         as="a"
-        href="#"
+        href="/promociones"
         variant="small"
         color="blue-gray"
         className="font-normal"
       >
-        <a href='/promociones'>
-          <ListItem className="flex items-center gap-2 py-2 pr-4">
-            <SparklesIcon className="h-[18px] w-[18px]" />
-            Promociones
-          </ListItem>
-        </a>
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          <SparklesIcon className="h-[18px] w-[18px]" />
+          Promociones
+        </ListItem>
       </Typography>
+
       <Typography
         as="a"
         href="#"
@@ -206,6 +191,17 @@ function NavList() {
           Contactanos
         </ListItem>
       </Typography>
+      <Typography
+        as="a"
+        href="/cotizacion"
+        variant="small"
+        color="blue-gray"
+        className="font-normal"
+      >
+        <Button variant="gradient" size="sm" color='red'>
+        Solicitud de cotizacion
+        </Button>
+      </Typography>  
     </List>
   );
 }
@@ -221,7 +217,7 @@ export function NavbarWithMegaMenu() {
   }, []);
  
   return (
-    <Navbar className="sticky top-0 z-10 mx-auto max-w-full px-4 py-2">
+    <Navbar className="sticky top-0 z-10 mx-auto max-w-screen-2xl px-4 py-2">
       <div className="flex items-center justify-between text-blue-gray-900">
         <img src={logo.src} alt="logo" />
         <div className="hidden lg:block">
